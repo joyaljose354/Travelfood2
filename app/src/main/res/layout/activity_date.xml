@@ -11,17 +11,43 @@
     tools:context="co.tripzana.tripzanakhaana.Date">
 
     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:text="Current Date:"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Date"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:text="Hello"
         android:textSize="25sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
         android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
         android:elevation="1dp"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignEnd="@+id/datePicker1" />
+
+
 </RelativeLayout>
