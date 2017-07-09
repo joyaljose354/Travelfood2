@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -14,6 +15,7 @@ public class Date extends AppCompatActivity {
     DatePicker picker;
     Button displayDate;
     TextView textview1;
+    ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
